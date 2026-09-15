@@ -1,0 +1,4 @@
+ticker,action,record_date,date,ratio,issue_price,status,source
+RELIANCE,rights,2020-05-14,2020-05-13,1:15,1257,confirmed,NSE corporate-actions archive
+BHARTIARTL,rights,2019-04-24,2019-04-23,19:67,220,confirmed,NSE corporate-actions archive
+BHARTIARTL,rights,2021-09-28,2021-09-28,1:14,535,confirmed,NSE corporate-actions archive

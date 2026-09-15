@@ -1,0 +1,1 @@
+Portfolio view generator components and their interfaces.

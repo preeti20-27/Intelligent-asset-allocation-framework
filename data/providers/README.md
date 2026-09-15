@@ -1,0 +1,1 @@
+Data provider adapters for sources such as bhavcopy and yfinance.

@@ -1,0 +1,1 @@
+Covariance estimator components and their interfaces.

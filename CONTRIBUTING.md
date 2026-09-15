@@ -1,0 +1,1 @@
+No component imports another component's concrete class; components may import only interfaces.
