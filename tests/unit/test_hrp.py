@@ -1,10 +1,10 @@
-"""Tests for allocator.hrp -- plain Hierarchical Risk Parity."""
+"""Tests for allocators.hrp -- plain Hierarchical Risk Parity."""
 
 import numpy as np
 import pandas as pd
 import pytest
 
-from allocator.hrp import allocate, compute_returns
+from allocators.hrp import allocate, compute_returns
 
 
 def _make_synthetic_returns(n_assets=8, n_days=500, seed=42) -> pd.DataFrame:

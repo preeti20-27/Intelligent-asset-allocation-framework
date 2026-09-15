@@ -8,7 +8,7 @@ encoding (leaf ids 0..n-1, internal-cluster ids n..2n-2, each row
 
 This module owns the clustering primitives (``correlation_distance``,
 ``build_linkage``, ``quasi_diagonalize``) that used to live inline in
-``allocator/hrp.py``; ``hrp.py`` now imports them from here (re-exported
+``allocators/hrp.py``; ``hrp.py`` now imports them from here (re-exported
 there for backward compatibility) rather than duplicating them, so the
 plain-HRP allocator and any future tree-consumer (e.g. view-informed HRP)
 are guaranteed to build the exact same tree from the same correlation
@@ -134,7 +134,7 @@ class ClusterTree:
             detected via ``_looks_like_correlation_matrix``; if given raw
             returns, the full sample's correlation is used (no windowing
             or missing-data handling here -- callers needing that, like
-            ``allocator.hrp.allocate``, should compute and pass in the
+            ``allocators.hrp.allocate``, should compute and pass in the
             correlation matrix themselves).
         linkage_method : str, optional
             Linkage method passed to ``scipy.cluster.hierarchy.linkage``.

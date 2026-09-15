@@ -1,8 +1,8 @@
-"""Sanity-check allocator.hrp.allocate() against PyPortfolioOpt's HRPOpt.
+"""Sanity-check allocators.hrp.allocate() against PyPortfolioOpt's HRPOpt.
 
 Generates a synthetic multi-asset returns DataFrame, runs both:
   - PyPortfolioOpt's built-in HRPOpt (single-linkage HRP reference impl), and
-  - this project's own allocate() from allocator/hrp.py,
+  - this project's own allocate() from allocators/hrp.py,
 
 then prints both weight vectors side by side along with the per-asset
 absolute difference, so the two can be visually compared.
@@ -21,7 +21,7 @@ import pandas as pd
 # anywhere without installing the project as a package.
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
-from allocator.hrp import allocate  # noqa: E402
+from allocators.hrp import allocate  # noqa: E402
 
 try:
     from pypfopt import HRPOpt
@@ -57,7 +57,7 @@ def main():
     ref_weights_dict = hrp_ref.optimize()
     ref_weights = pd.Series(ref_weights_dict).sort_index()
 
-    # --- Ours: allocator.hrp.allocate ---
+    # --- Ours: allocators.hrp.allocate ---
     our_weights = allocate(returns_df).sort_index()
 
     comparison = pd.DataFrame(
@@ -70,7 +70,7 @@ def main():
 
     pd.set_option("display.float_format", lambda x: f"{x:.6f}")
     print("=" * 60)
-    print("HRP weight comparison: PyPortfolioOpt vs allocator.hrp")
+    print("HRP weight comparison: PyPortfolioOpt vs allocators.hrp")
     print("=" * 60)
     print(comparison.to_string())
     print("-" * 60)

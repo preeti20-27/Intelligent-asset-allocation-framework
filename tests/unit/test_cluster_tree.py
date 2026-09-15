@@ -1,4 +1,4 @@
-"""Tests for allocator.cluster_tree.ClusterTree."""
+"""Tests for tree.cluster_tree.ClusterTree."""
 
 import numpy as np
 import pandas as pd
@@ -6,7 +6,7 @@ import pytest
 from scipy.cluster.hierarchy import linkage as scipy_linkage
 from scipy.spatial.distance import squareform
 
-from allocator.cluster_tree import ClusterTree, correlation_distance
+from tree.cluster_tree import ClusterTree, correlation_distance
 
 
 def _make_synthetic_returns(n_assets=8, n_days=500, seed=42) -> pd.DataFrame:

@@ -27,7 +27,7 @@ SCRIPT_DIR = Path(__file__).resolve().parent
 PROJECT_ROOT = SCRIPT_DIR.parent
 sys.path.insert(0, str(PROJECT_ROOT))
 
-from allocator.hrp import allocate  # noqa: E402
+from allocators.hrp import allocate  # noqa: E402
 
 # Deliberately not imported from validate_against_reference.py: that module
 # imports pypfopt at the top level, which pulls in cvxpy and has its own

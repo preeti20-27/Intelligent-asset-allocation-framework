@@ -3,7 +3,7 @@
 allocate() checks each asset's non-null fraction over the window it
 actually uses (the full sample, or the most recent ``window`` rows) before
 doing anything else, via ``_validate_min_non_null_fraction`` in
-allocator/hrp.py. That check exists because ``compute_correlation``/
+allocators/hrp.py. That check exists because ``compute_correlation``/
 ``compute_covariance`` compute pandas correlation/covariance, which default
 to *pairwise-complete-observations*: for each pair of columns, rows where
 either is NaN are dropped just for that pair. When different assets have
@@ -34,14 +34,14 @@ Two outcomes, verified empirically below:
 
 Net effect: allocate() never silently returns NaN weights, and never
 silently drops an asset. See the docstring on allocate() in
-allocator/hrp.py for the summarized contract.
+allocators/hrp.py for the summarized contract.
 """
 
 import numpy as np
 import pandas as pd
 import pytest
 
-from allocator.hrp import MIN_NON_NULL_FRACTION, allocate
+from allocators.hrp import MIN_NON_NULL_FRACTION, allocate
 
 
 def _make_base_returns(n_assets=6, n_days=300, seed=42) -> pd.DataFrame:
@@ -129,5 +129,5 @@ def test_multiple_offending_assets_are_all_named():
 def test_threshold_matches_module_constant():
     # Sanity check that the 90% figure quoted throughout these tests and
     # allocate()'s docstring actually matches the constant the code uses,
-    # so this file can't silently drift out of sync with allocator/hrp.py.
+    # so this file can't silently drift out of sync with allocators/hrp.py.
     assert MIN_NON_NULL_FRACTION == 0.9
