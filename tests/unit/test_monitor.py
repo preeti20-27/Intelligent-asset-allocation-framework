@@ -1,6 +1,6 @@
-from state import PortfolioState
-from monitor import check_portfolio
-from rules import HOLD, WARN_DRAWDOWN, WARN_CONCENTRATION
+from monitor.state import PortfolioState
+from monitor.monitor import check_portfolio
+from monitor.rules import HOLD, WARN_DRAWDOWN, WARN_CONCENTRATION
 import pytest
 
 
