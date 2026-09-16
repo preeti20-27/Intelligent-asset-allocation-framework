@@ -1,0 +1,34 @@
+window_idx,window_start,window_end,tilt_scale,status,error,num_views,max_abs_weight_change,mean_abs_weight_change,turnover_cost_20bps_estimate
+0,2015-01-02,2016-01-07,0.1,insufficient_data,"allocate() requires at least 90% non-null returns per asset over the 252-row window; violated by: LTGILTBEES (0.0% non-null, 252/252 rows missing). Clean or exclude these assets before calling allocate().",,,,
+0,2015-01-02,2016-01-07,0.2,insufficient_data,"allocate() requires at least 90% non-null returns per asset over the 252-row window; violated by: LTGILTBEES (0.0% non-null, 252/252 rows missing). Clean or exclude these assets before calling allocate().",,,,
+0,2015-01-02,2016-01-07,0.3,insufficient_data,"allocate() requires at least 90% non-null returns per asset over the 252-row window; violated by: LTGILTBEES (0.0% non-null, 252/252 rows missing). Clean or exclude these assets before calling allocate().",,,,
+1,2016-01-08,2017-01-13,0.1,insufficient_data,"allocate() requires at least 90% non-null returns per asset over the 252-row window; violated by: LTGILTBEES (5.6% non-null, 238/252 rows missing). Clean or exclude these assets before calling allocate().",,,,
+1,2016-01-08,2017-01-13,0.2,insufficient_data,"allocate() requires at least 90% non-null returns per asset over the 252-row window; violated by: LTGILTBEES (5.6% non-null, 238/252 rows missing). Clean or exclude these assets before calling allocate().",,,,
+1,2016-01-08,2017-01-13,0.3,insufficient_data,"allocate() requires at least 90% non-null returns per asset over the 252-row window; violated by: LTGILTBEES (5.6% non-null, 238/252 rows missing). Clean or exclude these assets before calling allocate().",,,,
+2,2017-01-16,2018-01-18,0.1,insufficient_data,"allocate() requires at least 90% non-null returns per asset over the 252-row window; violated by: LTGILTBEES (37.7% non-null, 157/252 rows missing). Clean or exclude these assets before calling allocate().",,,,
+2,2017-01-16,2018-01-18,0.2,insufficient_data,"allocate() requires at least 90% non-null returns per asset over the 252-row window; violated by: LTGILTBEES (37.7% non-null, 157/252 rows missing). Clean or exclude these assets before calling allocate().",,,,
+2,2017-01-16,2018-01-18,0.3,insufficient_data,"allocate() requires at least 90% non-null returns per asset over the 252-row window; violated by: LTGILTBEES (37.7% non-null, 157/252 rows missing). Clean or exclude these assets before calling allocate().",,,,
+3,2018-01-19,2019-01-28,0.1,insufficient_data,"allocate() requires at least 90% non-null returns per asset over the 252-row window; violated by: LTGILTBEES (86.9% non-null, 33/252 rows missing). Clean or exclude these assets before calling allocate().",,,,
+3,2018-01-19,2019-01-28,0.2,insufficient_data,"allocate() requires at least 90% non-null returns per asset over the 252-row window; violated by: LTGILTBEES (86.9% non-null, 33/252 rows missing). Clean or exclude these assets before calling allocate().",,,,
+3,2018-01-19,2019-01-28,0.3,insufficient_data,"allocate() requires at least 90% non-null returns per asset over the 252-row window; violated by: LTGILTBEES (86.9% non-null, 33/252 rows missing). Clean or exclude these assets before calling allocate().",,,,
+4,2019-01-29,2020-02-05,0.1,ok,,11.0,0.32297900720084416,0.07721570362008007,0.0006459580144016884
+4,2019-01-29,2020-02-05,0.2,ok,,11.0,0.19579456196416603,0.04749888577531219,0.0003915891239283321
+4,2019-01-29,2020-02-05,0.3,ok,,11.0,0.15652886101882352,0.03582374102401344,0.00031305772203764706
+5,2020-02-06,2021-02-09,0.1,ok,,11.0,0.3884142506132048,0.11900994749101533,0.0007768285012264096
+5,2020-02-06,2021-02-09,0.2,ok,,11.0,0.3884142506132048,0.11239990926482447,0.0007768285012264096
+5,2020-02-06,2021-02-09,0.3,ok,,11.0,0.36239834329777926,0.09210870950682858,0.0007247966865955585
+6,2021-02-10,2022-02-15,0.1,ok,,11.0,0.29188029825811734,0.07031036511685272,0.0005837605965162347
+6,2021-02-10,2022-02-15,0.2,ok,,11.0,0.10634109381193867,0.03987933496784731,0.00021268218762387733
+6,2021-02-10,2022-02-15,0.3,ok,,11.0,0.0655511261790984,0.029030288639772302,0.0001311022523581968
+7,2022-02-16,2023-02-20,0.1,ok,,11.0,0.5966817628009817,0.09944696046683028,0.0011933635256019634
+7,2022-02-16,2023-02-20,0.2,ok,,11.0,0.35607231440333376,0.05948341269211541,0.0007121446288066675
+7,2022-02-16,2023-02-20,0.3,ok,,11.0,0.2758691649374512,0.04597819415624185,0.0005517383298749023
+8,2023-02-21,2024-02-27,0.1,ok,,11.0,0.9579367891143223,0.15965613151905372,0.0019158735782286447
+8,2023-02-21,2024-02-27,0.2,ok,,11.0,0.5062306510302674,0.08437177517171122,0.0010124613020605349
+8,2023-02-21,2024-02-27,0.3,ok,,11.0,0.2699314464231412,0.047971930177156064,0.0005398628928462825
+9,2024-02-28,2025-03-03,0.1,ok,,11.0,0.9548603793394332,0.1591433965565722,0.0019097207586788664
+9,2024-02-28,2025-03-03,0.2,ok,,11.0,0.9548603793394334,0.1591433965565722,0.0019097207586788666
+9,2024-02-28,2025-03-03,0.3,ok,,11.0,0.6517489206035211,0.10862482010058684,0.0013034978412070422
+10,2025-03-04,2026-03-10,0.1,ok,,11.0,0.09076061743166208,0.015669069504899723,0.00018152123486332418
+10,2025-03-04,2026-03-10,0.2,ok,,11.0,0.06862154727096748,0.015632171054631928,0.00013724309454193496
+10,2025-03-04,2026-03-10,0.3,ok,,11.0,0.061241857217402496,0.01561987157120931,0.000122483714434805

@@ -223,3 +223,4 @@ data/processed/*.parquet
 # Project-specific
 .venv_validate/
 .venv_py311/
+outputs/
