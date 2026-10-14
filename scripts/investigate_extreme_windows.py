@@ -36,6 +36,7 @@ from views.momentum_generator import (  # noqa: E402
     MIN_TILT_STRENGTH_TO_EMIT,
     _cluster_trailing_return,
     _data_availability_fraction,
+    _momentum_gap_significance,
 )
 from views.momentum_generator import generate_momentum_views  # noqa: E402
 
@@ -73,6 +74,7 @@ def _walk_and_report_views(returns_df: pd.DataFrame, tree: ClusterTree, lookback
         confidence = min(
             _data_availability_fraction(returns_df, favored_assets, lookback),
             _data_availability_fraction(returns_df, unfavored_assets, lookback),
+            _momentum_gap_significance(returns_df, left_assets, right_assets, lookback),
         )
 
         rows.append(
