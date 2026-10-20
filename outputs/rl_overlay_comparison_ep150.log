@@ -1,0 +1,50 @@
+# Output of: python scripts/run_rl_overlay_comparison.py --episodes 150  (torch 2.14.1+cpu)
+Full backtest date range : 2019-04-05 to 2026-09-11 (1844 days)
+In-Sample Train range    : 2019-04-05 to 2022-12-30 (927 days)
+Out-of-Sample Test range : 2023-01-02 to 2026-09-11 (917 days)
+Pre-computing base HRP allocator weights for all rebalance dates...
+Base weights precomputed for 1844 trading days.
+
+Training RL Risk Agent for 150 episodes on in-sample data (927 days)...
+Training completed. Final average loss: 0.32793, Final epsilon: 0.050
+Trained model checkpoint saved to: C:\Users\Admin\Desktop\Swayam\Projects\Intelligent Asset alocation system\outputs\rl_risk_agent.pt
+
+Running Out-of-Sample (Unseen Test Data) Backtest...
+
+=======================================================
+ OUT-OF-SAMPLE TEST RESULTS (2023-01-02 to 2026-09-11)
+=======================================================
+Metric                   | Baseline HRP   | HRP + RL Overlay
+-------------------------+----------------+-----------------
+Total Return             |         37.30% |           36.87%
+Annualized Sharpe        |           2.60 |             2.62
+Max Drawdown             |         -3.02% |           -2.95%
+Annualized Volatility    |          3.38% |            3.32%
+Total Turnover (x)       |           2.34 |             3.92
+-------------------------+----------------+-----------------
+RL Overlay Action Distribution:
+  HOLD            :    52 days (  5.7%)
+  DERISK_MILD     :   828 days ( 90.3%)
+  DERISK_STRONG   :    37 days (  4.0%)
+=======================================================
+
+Running Full-Period Backtest...
+
+=======================================================
+ FULL PERIOD RESULTS (2019-04-05 to 2026-09-11)
+=======================================================
+Metric                   | Baseline HRP   | HRP + RL Overlay
+-------------------------+----------------+-----------------
+Total Return             |        107.81% |           97.01%
+Annualized Sharpe        |           0.91 |             0.85
+Max Drawdown             |        -21.54% |          -20.89%
+Annualized Volatility    |         11.81% |           11.77%
+Total Turnover (x)       |           7.89 |            22.94
+-------------------------+----------------+-----------------
+RL Overlay Action Distribution:
+  HOLD            :   381 days ( 20.7%)
+  DERISK_MILD     :  1257 days ( 68.2%)
+  DERISK_STRONG   :   206 days ( 11.2%)
+=======================================================
+
+Comparison plot saved to: C:\Users\Admin\Desktop\Swayam\Projects\Intelligent Asset alocation system\outputs\equity_curve_hrp_vs_rl_overlay.png
