@@ -23,7 +23,7 @@ reflects the committed results, even if this README goes out of date.
 From the project root, with the project's virtual environment active:
 
 ```
-pip install streamlit      # once; not yet in pyproject.toml
+pip install -e .           # once; installs streamlit and the other dependencies
 streamlit run interface/app.py
 ```
 
